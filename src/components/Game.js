@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import uniqid from "uniqid";
 import Header from "./Header";
 import Card from "./Card";
@@ -91,16 +91,30 @@ const allCards = [
 ];
 
 function Game() {
-    const [cards, setCards] = useState([]);
+    const [cards, setCards] = useState(allCards);
     const [chosenCards, setChosenCards] = useState([]);
     const [score, setScore] = useState(0);
     const [highScore, setHighScore] = useState(0);
+
+    useEffect(() => {
+
+    })
 
     return (
         <div>
             <Header/>
             <div className="game">
-
+                {cards.map((card) => {
+                    return (
+                        <Card
+                        key={uniqid()}
+                        image={card.image}
+                        name={card.name}
+                        cardBg={card.cardBg}
+                        imageBg={card.imageBg}
+                        />
+                    )
+                })}
             </div>
         </div>
     )
