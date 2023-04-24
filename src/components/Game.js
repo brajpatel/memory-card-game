@@ -96,10 +96,6 @@ function Game() {
     const [score, setScore] = useState(0);
     const [highScore, setHighScore] = useState(0);
 
-    useEffect(() => {
-
-    })
-
     return (
         <div>
             <Header/>
