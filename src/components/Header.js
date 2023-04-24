@@ -8,6 +8,7 @@ function Header() {
                 <p>Score: 0</p>
                 <p>High Score</p>
             </div>
+            <a href="#"></a>
         </header>
     )
 }
