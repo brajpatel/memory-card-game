@@ -69,7 +69,7 @@ header {
 }
 
 .game {
-  max-width: 80vw;
+  max-width: 75vw;
   display: grid;
   grid-template: repeat(3, auto) / repeat(4, 1fr);
   gap: 4rem;

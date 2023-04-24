@@ -91,10 +91,23 @@ const allCards = [
 ];
 
 function Game() {
-    const [cards, setCards] = useState(allCards);
+    const [cards, setCards] = useState([]);
     const [chosenCards, setChosenCards] = useState([]);
     const [score, setScore] = useState(0);
     const [highScore, setHighScore] = useState(0);
+
+    useEffect(() => {
+        let prevCards = [...allCards];
+        let shuffledCards = [];
+
+        while(prevCards.length > 0) {
+            let index = Math.floor(Math.random() * prevCards.length);
+            let nextCard = prevCards.splice(index, 1);
+            shuffledCards.push(nextCard);
+        }
+
+        setCards(shuffledCards);
+    }, [score]);
 
     return (
         <div>
