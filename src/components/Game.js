@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import uniqid from "uniqid";
 import Header from "./Header";
 import Card from "./Card";
 import angular from "../assets/angular.png";
@@ -98,6 +99,9 @@ function Game() {
     return (
         <div>
             <Header/>
+            <div className="game">
+
+            </div>
         </div>
     )
 }
