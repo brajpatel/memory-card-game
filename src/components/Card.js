@@ -1,7 +1,12 @@
 import React from "react";
 
-function Game() {
-
+function Card() {
+    return (
+        <div className="card">
+            <img src="#" alt="card"/>
+            <p>Card Name</p>
+        </div>
+    )
 }
 
-export default Game;
+export default Card;
