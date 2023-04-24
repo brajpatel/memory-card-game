@@ -96,6 +96,10 @@ function Game() {
     const [score, setScore] = useState(0);
     const [highScore, setHighScore] = useState(0);
 
+    const updateScore = () => {
+
+    }
+
     useEffect(() => {
         let prevCards = [...allCards];
         let shuffledCards = [];
@@ -111,7 +115,7 @@ function Game() {
 
     return (
         <div>
-            <Header/>
+            <Header score={score} highScore={highScore} />
             <div className="game">
                 {cards.map((card) => {
                     return (
