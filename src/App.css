@@ -13,8 +13,11 @@ body {
 header {
   position: relative;
   background: #1a1a1a;
+  height: 80px;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 0.6rem;
   padding: 1.5rem 0;
@@ -63,4 +66,37 @@ header {
   100% {
     transform: translateY(-50%);
   }
+}
+
+.game {
+  max-width: 80vw;
+  display: grid;
+  grid-template: repeat(3, auto) / repeat(4, 1fr);
+  gap: 4rem;
+  padding: 3rem 0;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  border-radius: 12px;
+  padding: 1.5rem 0;
+  cursor: pointer;
+}
+
+.card img {
+  max-width: 40%;
+  padding: 1rem;
+  border-radius: 12px;
+  user-select: none;
+}
+
+.card p {
+  font-size: 2rem;
+  font-family: 'Rajdhani', sans-serif;
+  user-select: none;
 }
