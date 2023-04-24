@@ -21,3 +21,13 @@ header {
   color: #eaebea;
   font-family: 'Barlow', sans-serif;
 }
+
+.github-link {
+  position: absolute;
+  top: 50%;
+  left: 3rem;
+  transform: translateY(-50%);
+  color: #eaebea;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
