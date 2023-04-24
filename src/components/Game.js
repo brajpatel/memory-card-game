@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import Card from "./Card";
 import angular from "../assets/angular.png";
@@ -90,6 +90,11 @@ const allCards = [
 ];
 
 function Game() {
+    const [cards, setCards] = useState([]);
+    const [chosenCards, setChosenCards] = useState([]);
+    const [score, setScore] = useState(0);
+    const [highScore, setHighScore] = useState(0);
+
     return (
         <div>
             <Header/>
