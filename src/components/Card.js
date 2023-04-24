@@ -1,6 +1,6 @@
 import React from "react";
 
-function Card() {
+function Card(props) {
     const { image, name, cardBg, imageBg } = props;
     const imageAlt = name + ' icon';
 

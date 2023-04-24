@@ -31,7 +31,7 @@ header {
 .github-link {
   position: absolute;
   top: 50%;
-  left: 3rem;
+  right: 3rem;
   transform: translateY(-50%);
   color: #eaebea;
   text-decoration: none;
