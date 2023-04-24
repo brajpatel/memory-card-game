@@ -8,7 +8,7 @@ function Header() {
                 <p>Score: 0</p>
                 <p>High Score</p>
             </div>
-            <a href="#"></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
         </header>
     )
 }

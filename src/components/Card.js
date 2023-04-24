@@ -1,7 +1,7 @@
 import React from "react";
 
-function Card() {
+function Game() {
 
 }
 
-export default Card;
+export default Game;
