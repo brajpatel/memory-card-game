@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d5cc160a.css",
+    "main.js": "/static/js/main.0120d061.js",
+    "static/media/ruby.png": "/static/media/ruby.8f1ecc1e1035760b9936.png",
+    "static/media/react.png": "/static/media/react.22d1f2096ed82cab7a8a.png",
+    "static/media/java.png": "/static/media/java.ffc5e02a1d7e919acbb9.png",
+    "static/media/node-js.png": "/static/media/node-js.8635b25e47ae836d4acf.png",
+    "static/media/angular.png": "/static/media/angular.9685f6372e91e97dbc34.png",
+    "static/media/github.png": "/static/media/github.4d06f801014509f660f0.png",
+    "static/media/mongodb.png": "/static/media/mongodb.7e5b739c354145fa00c5.png",
+    "static/media/html.png": "/static/media/html.7b05005495cdff840fea.png",
+    "static/media/c-plus-plus.png": "/static/media/c-plus-plus.c417f91d77a7ff6b1329.png",
+    "static/media/python.png": "/static/media/python.e80f54ac40860c436de9.png",
+    "static/media/css.png": "/static/media/css.8aaf7833370a6845139c.png",
+    "index.html": "/index.html",
+    "main.d5cc160a.css.map": "/static/css/main.d5cc160a.css.map",
+    "main.0120d061.js.map": "/static/js/main.0120d061.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5cc160a.css",
+    "static/js/main.0120d061.js"
+  ]
+}
