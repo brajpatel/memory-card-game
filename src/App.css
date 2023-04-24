@@ -12,7 +12,7 @@ body {
 
 header {
   position: relative;
-  background: #1a1a1a;
+  background: #1f1f1f;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -136,4 +136,41 @@ header h1 {
   font-size: 2rem;
   font-family: 'Rajdhani', sans-serif;
   user-select: none;
+}
+
+@media(max-width: 1150px) {
+  .game {
+    max-width: 85vw;
+  }
+
+  .card p {
+    font-size: 1.6rem;
+  }
+}
+
+@media(max-width: 850px) {
+  .game {
+    grid-template: repeat(4, auto) / repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .card {
+    gap: 0.6rem;
+    padding: 1rem 0;
+  }
+}
+
+@media(max-width: 700px) {
+  .github-link {
+    display: none;
+  }
+
+  .game {
+    gap: 1rem;
+    padding: 1.5rem 0;
+  }
+
+  .card p {
+    font-size: 1.3rem;
+  }
 }
