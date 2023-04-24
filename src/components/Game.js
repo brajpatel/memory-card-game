@@ -140,6 +140,7 @@ function Game() {
                     return (
                         <Card
                         key={uniqid()}
+                        updateScore={updateScore}
                         image={card.image}
                         name={card.name}
                         cardBg={card.cardBg}
