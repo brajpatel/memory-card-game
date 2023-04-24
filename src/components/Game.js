@@ -97,7 +97,7 @@ function Game() {
     const [highScore, setHighScore] = useState(0);
 
     const updateScore = (cardName) => {
-        let updatedChosenCards = [...chosenCards];
+        let updatedChosenCards = chosenCards;
         updatedChosenCards.push({ name: cardName });
         setChosenCards(updatedChosenCards);
 
@@ -113,7 +113,7 @@ function Game() {
                 setHighScore(score);
             }
 
-            setCards(allCards);
+            setCards([]);
             setChosenCards([]);
             setScore(0);
         }
@@ -129,12 +129,12 @@ function Game() {
             shuffledCards.push(nextCard);
         }
 
-        setCards(shuffledCards);
+        setCards(shuffledCards.flat(1));
     }, [score]);
 
     return (
         <div>
-            <Header score={score} highScore={highScore} />
+            <Header score={score} highScore={highScore}/>
             <div className="game">
                 {cards.map((card) => {
                     return (
