@@ -97,7 +97,7 @@ function Game() {
     const [highScore, setHighScore] = useState(0);
 
     const updateScore = () => {
-
+        
     }
 
     useEffect(() => {
