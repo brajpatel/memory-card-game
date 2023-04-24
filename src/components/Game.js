@@ -96,8 +96,27 @@ function Game() {
     const [score, setScore] = useState(0);
     const [highScore, setHighScore] = useState(0);
 
-    const updateScore = () => {
-        
+    const updateScore = (cardName) => {
+        let updatedChosenCards = [...chosenCards];
+        updatedChosenCards.push({ name: cardName });
+        setChosenCards(updatedChosenCards);
+
+        if(chosenCards.filter((card) => card.name === cardName).length === 1) {
+            console.log('first time picking this card');
+            setScore(score + 1);
+        }
+        else {
+            console.log('card has been picked already');
+            alert('You\'ve already picked that card!');
+
+            if(score > highScore) {
+                setHighScore(score);
+            }
+
+            setCards(allCards);
+            setChosenCards([]);
+            setScore(0);
+        }
     }
 
     useEffect(() => {
